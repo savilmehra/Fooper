@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#FFFFFF</color>
+<color name="colorPrimaryDark">#090</color>
+<color name="colorAccent">#D81B60</color>
+<color name="blue">#079BD8</color>
+<color name="light_blue">#4585f3</color>
+<color name="IndicatorColor">#FF9500</color>
+<color name="silver">#C0C0C0</color>
+<color name="grey">#707070</color>
+<color name="light_grey">#e5e5e5</color>
+<color name="white">#FFFFFF</color>
+<color name="pinkish_red">#fb4f4f</color>
+<color name="green">#008000</color>
+<color name="transparent">#00000000</color>
+<color name="orange">#ff8500</color>
+<color name="black">#000000</color>
+<!-- Change after new design -->
+<color name="text_blue">#4B7DF8</color>
+<color name="back_textvw">#C6E2FF</color>
+<color name="txt_light_blue">#4585F3</color>
+<color name="text_light">#66000000</color>
+<color name="card_light_text">#ffb5b5b5</color>
+<color name="card_grid_text">#ff707070</color>
+<color name="card_border">#ffdedede</color>
+<color name="accepted">#71C671</color>
+<color name="red">#FF0000</color>
+<color name="seperator_grey">#E2E2E2</color>
+<color name="overlay_higlight">#FFD980</color>
+<color name="overlay_Expendable_list">#cccccc</color>
+<!-- changed acc to new design -->
+<color name="food_order_bg">#ED9220</color>
+<color name="blue_midtone">#2196f3</color>
+<!-- changed acc to new design -->
+<color name="blue_litetone">#0095dd</color>
+<color name="nav_drawer_text">#000000</color>
+<color name="dark_sky_blue">#00CCFF</color>
+<color name="statusbar_color">#1565c0</color>
+
+<color name="gplus_color_2">#f4b400</color>
+<color name="step_pager_previous_tab_color">#4433b5e5</color>
+<color name="dark_blue_color">#002147</color>
+<color name="grey_midtone_dark">#D3D3D3</color>
+<color name="yellow">#ffbf00</color>
+<color name="dark_red">#d11717</color>
+
+<!-- New colors added for UI standardization -->
+<color name="nav_drawer_bg">#FFFFFF</color>
+<color name="app_theme_bg">#d8d8d8</color>
+<color name="home_card_title">#2196f3</color>
+<color name="light_grey_for_sub_heading">#808080</color>
+<color name="light_grey_for_sub_text">#999999</color>
+<color name="light_grey_for_sub_text_value">#4d4d4d</color>
+<color name="grey_40">#666666</color>
+<color name="light_grey_for_seperator">#f1f1f1</color>
+<color name="date_time">#333333</color>
+<color name="train_number_name">#444444</color>
+<color name="from_to">#808080</color>
+<color name="red_background_for_waiting">#d14343</color>
+<color name="green_background_for_confirm">#009245</color>
+<color name="text_title">#333333</color>
+<color name="text_description">#666666</color>
+<color name="blue_dark_station_code_bck">#00638E</color>
+<color name="google_red">#dd4b39</color>
+<color name="happy_green">#39B54A</color>
+<color name="angry_red">#F94848</color>
+<color name="neutral_yellow">#FBAE17</color>
+<color name="meal_info_color_bg">#f2dede</color>
+<color name="meal_remove">#cccccc</color>
+<color name="card_background_empty_data_food">#fdebeb</color>
+<color name="card_background_empty_data">#e3f2fd</color>
+<color name="grey_after_alpha">#88000000</color>
+
+<color name="grey_mobile_verification">#E0E0E0</color>
+<!-- food theme colors -->
+<color name="food_theme_status_bar">#c00000</color>
+<color name="food_theme_toolbar">#e20000</color>
+<color name="food_theme_bg">#fae6d1</color>
+<color name="food_dinner">#BBE5FC</color>
+<color name="food_add_btn_color">#68bb00</color>
+<!-- food theme color ends -->
+
+<color name="edit_text_border">#979797</color>
+<color name="hospital_row_background">#f7f7f7</color>
+<color name="hospital_transparent_background">#80ffffff</color>
+
+<color name="popup_bg_color">#EE666666</color>
+<color name="separator_color">#BBBBBB</color>
+<color name="popup_text_color">#FFFFFF</color>
+<color name="home_meal_msg1_color">#1565C0</color>
+<color name="home_meal_msg2_color">#F15A24</color>
+<color name="meal_icon_color">#F15A24</color>
+
+<color name="pure_orange">#fd7400</color>
+<color name="strong_yellow">#f4bb01</color>
+<color name="unselected_white">#a3ccf1</color>
+
+<color name="med_yellow">#f99d2a</color>
+<color name="high_green">#709c15</color>
+<color name="low_red">#c8393a</color>
+<color name="app_cord_back">#f1f1f1</color>
+<color name="black_text">#363636</color>
+<color name="dark_seperator">#404040</color>
+<color name="light_seperator">#cccccc</color>
+
+<!--<color name="nav_home_icon_color">#595959</color>-->
+<!--<color name="nav_local_metro_icon_color">#AE7EC4</color>-->
+<!--<color name="nav_booking_icon_color">#F05A28</color>-->
+<!--<color name="nav_trains_icon_color">#2196F3</color>-->
+<color name="nav_divider_and_expend_collepse_color">#E4E4E4</color>
+<!--<color name="nav_text_color">#555555</color>-->
+<!--<color name="nav_expendable_text_color">#999999</color>-->
+<color name="nav_drawer_header_background">#21304A</color>
+<color name="nav_drawer_header_heading">#6B737D</color>
+
+<color name="pnr_offline_card_background">#FFED75</color>
+<color name="offline_toolbar_color">#A0A0A0</color>
+<color name="offline_statusbar_color">#77A0A0A0</color>
+<color name="rush_alert_heading">#757575</color>
+<color name="rush_alert_icon_color">#f0ad4e</color>
+<color name="loader_header">#6bd99c</color>
+<color name="trip_time">#A9A9A9</color>
+<color name="popup_background">#fafafa</color>
+<color name="popup_textcolor">#727272</color>
+<color name="popup_tripea">#3a3a3a</color>
+
+<!-- Latest Google Design Text Colors-->
+<color name="dark_primary_text_color_87">#DE000000</color>
+<color name="dark_secondary_text_color_54">#8A000000</color>
+<color name="dark_sub_text_color_38">#61000000</color>
+<color name="dark_divider_color_12">#1F000000</color>
+
+<!-- similar to white -->
+
+<!-- similar to white -->
+<color name="app_bg_without_card">#FAFAFA</color>
+<color name="app_bg_with_card">#EEEEEE</color>
+<color name="blue_link_color">#1976D2</color>
+<!--<color name="bluetooth_share_bg">#53b33a</color>-->
+<!--<color name="bluetooth_share_tv">#0284ce</color>-->
+<!--<color name="require_bluetooth">#d1d1d1</color>-->
+<color name="grey_color">#e9e9e9</color>
+<color name="color_black_87">#DE000000</color>
+<color name="color_black_75">#404040</color>
+<color name="color_black_70">#444444</color>
+<color name="color_black_54">#8A000000</color>
+<color name="color_black_12">#0C000000</color>
+<color name="color_black_20">#33000000</color>
+<color name="color_black_30">#4D000000</color>
+<color name="color_black_5">#0D000000</color>
+<color name="card_title_color">#9a9a9a</color>
+<color name="filter_title_text">#4b4b4b</color>
+<color name="filter_unselected_text">#8b8b8b</color>
+
+<color name="grey_notification_background">#f4f4f4</color>
+<color name="pnr_card_bus">#496680</color>
+<color name="pnr_card_bus_items">#969696</color>
+
+<color name="primary_text">#DE000000</color>
+<color name="secondary_text">#8A000000</color>
+<color name="hint">#5E000000</color>
+<color name="divider">#1F000000</color>
+<color name="hotel_suggestion">#1AF15A24</color>
+<color name="book_text">#a3a3a3</color>
+<color name="book_meal_text">#e56701</color>
+<color name="color_black_60">#96000000</color>
+<color name="color_white_65">#A6FFFFFF</color>
+
+<color name="bus_home_card_divider">#7C8E97</color>
+<color name="bus_route_pnr_item_txt">#f3f3f3</color>
+<color name="bus_route_pnr_item_sub_txt">#e0e0e0</color>
+<color name="current_status_bus_route_pnr_sub_txt">#ccd2d9</color>
+<color name="bus_route_pnr_item_seperator">#a5a5a5</color>
+<color name="white_opposity">#aaFFFFFF</color>
+<color name="pnr_status_image">#3fbae8</color>
+<color name="more_option_image">#424242</color>
+<color name="IndicatorNewColor">#ffffff</color>
+<color name="seat_availability">#009688</color>
+<color name="dark_primary_text_color_2">#05000000</color>
+<color name="light_blue_order">#242196F3</color>
+<color name="green_with_10_percent">#1A008000</color>
+<color name="blue_midtone_10">#1A2196f3</color>
+<color name="brownish_red">#cd9c61</color>
+<color name="seashell">#fceeee</color>
+<color name="offers_color">#34495e</color>
+
+<color name="green_timer">#74c178</color>
+<color name="orange_timer">#e89b49</color>
+<color name="red_timer">#e94949</color>
+<color name="light_yellow">#FFEB3B</color>
+<color name="dark_maroon">#B71C1C</color>
+<color name="alpha5_maroon">#DB8e8e</color>
+<color name="alert_color">#f44336</color>
+<color name="normal_track">#802196f3</color>
+<color name="view_light_grey">#E6E6E6</color>
+
+<color name="map_route_passed">#959595</color>
+<color name="separator_color_map">#cacaca</color>
+
+<!--Feedback Screen Emoji Colors-->
+<color name="emoji_red">#F44336</color>
+<color name="emoji_orange">#FF9800</color>
+<color name="emoji_green">#4CAF50</color>
+<color name="order_his_feedback_text">#F57300</color>
+<color name="order_his_timeline_green">#0ECB0E</color>
+<color name="order_his_timeline_grey">#D9D9D9</color>
+<color name="breadcrumbs_background">#FFF7E7</color>
+<color name="breagcrumbs_divider">#EDEDED</color>
+
+<color name="merchandise_color">#f09d4b</color>
+<color name="simple_text">#525b60</color>
+<color name="tbs_background">#ebebeb</color>
+<color name="bus_success">#2ca165</color>
+<color name="bus_status_cancel">#f24f5e</color>
+<color name="textFilterColor">#636363</color>
+
+<color name="network_green">#008000</color>
+<color name="network_grey">#676767</color>
+
+<color name="orange_for_coupon">#f06000</color>
+<color name="offer_tab_blue">#448aff</color>
+
+<color name="cnf_dialog_green_light_color">#4cb050</color>
+<color name="cnf_dialog_orange_light_color">#ffb250</color>
+<color name="cnf_dialog_red_light_color">#f54337</color>
+<color name="cnf_dialog_orange_dark_color">#ff8e01</color>
+<color name="cnf_dialog_green_dark_color">#3a863c</color>
+<color name="cnf_dialog_red_dark_color">#d32f2e</color>
+<color name="description_color">#737373</color>
+<color name="dashed_color">#bdbdbd</color>
+<color name="blue_dark">#068d9e</color>
+<color name="translucent">#0D000000</color>
+<color name="notification_blue">#eef4ff</color>
+<color name="app_theme_bg_bus">#f5f5f5</color>
+
+<color name="merchandise_theme_grey">#343b41</color>
+<color name="merchandise_desc_color">#9b9b9b</color>
+<color name="merchandise_primary_dark">#2a3034</color>
+<color name="translucent1">#59000000</color>
+<color name="translucent2">#93000000</color>
+<color name="blue_midtone_alpha5">#90CAF9</color>
+<color name="green_bus_rating">#1faa00</color>
+<color name="astro_nav_color">#512da8</color>
+<color name="black_reverse_rout">#1a1a1a</color>
+<color name="black_reverse_rout_header">#404040</color>
+<color name="cabs_theme_mustard">#404040</color>
+<color name="cabs_theme_mustard_dark">#4A4A4A</color>
+<color name="cabs_purple">#9f09a5</color>
+
+<color name="color_white_87">#DEFFFFFF</color>
+<color name="color_white_50">#8AFFFFFF</color>
+<color name="lemon_yellow_color">#fdd835</color>
+
+<color name="dark_blue_pnr">#001e72</color>
+
+<color name="train_dialog_color">#2196f3</color>
+<color name="cab_dialog_color">#fdca10</color>
+<color name="food_dialog_color">#c00000</color>
+<color name="trave_store_dialog_color">#343b41</color>
+<color name="discount_color">#09954B</color>
+<color name="star_color">#ff9c06</color>
+<color name="orange_footer">#FF4800</color>
+<color name="bus_color_text">#9a9a9a</color>
+
+<color name="ph_colorPrimary">@color/blue_midtone</color>
+<color name="ph_colorPrimaryDark">@color/statusbar_color</color>
+<color name="ph_textColor">@color/secondary_text</color>
+<color name="personalised_card_title">#9a9a9a</color>
+<color name="orange_bg">#f37900</color>
+
+<color name="tooltip_bg">#EAF6DD</color>
+<color name="package_yellow">#F7E301</color>
+<color name="loading_gray">#4a4a4a</color>
+<color name="chrome_grey">#F2F2F2</color>
+<color name="trans_black_25">#40000000</color>
+<color name="bus_color_one">#966EB5</color>
+<color name="bus_item_background">#DEDEDE</color>
+<color name="loader_background_color">#0C000000</color>
+<color name="cp_background">#FEF6E9</color>
+
+<color name="low_cp_dark">#E9494A</color>
+<color name="low_cp_light">#F8CBCC</color>
+<color name="low_cp_light1">#FCECEC</color>
+
+<color name="high_cp_dark">#71be75</color>
+<color name="high_cp_light">#d9edda</color>
+<color name="high_cp_light1">#f3f9f4</color>
+
+<color name="medium_cp_dark">#c87915</color>
+<color name="medium_cp_light">#fce5c1</color>
+<color name="medium_cp_light1">#fef6e9</color>
+<color name="green_start">#27a700</color>
+<color name="green_end">#68bb00</color>
+<color name="train_offer_blue">#4A90E2</color>
+<color name="user_name">#FACB1B</color>
+<color name="blue_dim">#5A27F3</color>
+<color name="hotel_tab_selected">#5401C4</color>
+<color name="hotel_color">#5844C8</color>
+<color name="lts_btn_blue">#033563</color>
+<color name="lts_btn_blue_dark">#001c36</color>
+<color name="yellow_color">#eeff2d</color>
+<color name="cab_background">#eeeeee</color>
+<color name="merchandise_transparent">#26000000</color>
+<drawable name="clr_pressed">#E6E6E6</drawable>
+<color name="tranparent_black">#99000000</color>
+<color name="bus_filter_icon">#A1A1A1</color>
+<color name="dull_white">#80FFFFFF</color>
+<color name="tbs_tag_bg_color">#61c4d1</color>
+<color name="tbs_blue_bg_color">#f4f9fe</color>
+<color name="medium_slate_blue">#6070e6</color>
+<color name="ts_seller">#e69f3b</color>
+<color name="itinerary_color">#ffda7e</color>
+<color name="footer_button_color">#f5a623</color>
+<color name="darkest_blue">#1C155F</color>
+<color name="gps_text_color">#727EA3</color>
+<color name="food_background">#FBFBFB</color>
+<color name="food_dot_line">#707070</color>
+<color name="food_order_now">#C00000</color>
+<color name="food_day_color">#F6F6F6</color>
+<color name="food_card_fade">#F9F9F9</color>
+<color name="food_stn_fade">#FEBBC0</color>
+<color name="expess_background">#EDFFC4</color>
+<color name="food_stn_background">#F5FFC9</color>
+
+<color name="splash_one">#FEFAD1</color>
+<color name="splash_two">#DBFFF7</color>
+<color name="splash_three">#F8E6C7</color>
+
+<color name="blue_loyality_point">#2B9AF3</color>
+<color name="tab_color">#2A99F2</color>
+<!--Screen: LTS-->
+<color name="color_text_default">#4a4a4a</color>
+<color name="color_text_blue_highlighted">#4a90e2</color>
+<color name="color_internet_gps_switch_bottom_bar">#002b5d</color>
+<color name="color_next_station_delay">#e85d6e</color>
+<color name="color_next_station_on_time">#39B54A</color>
+<color name="color_previous_station_dimm_background">#eeeeee</color>
+<color name="color_upcoming_station_highlight_blue_background">#dfeeff</color>
+<color name="color_upcoming_station_delay">#d00620</color>
+<color name="color_upcoming_station_on_time">#39B54A</color>
+<color name="color_previous_no_halt_bg">#e9e7e7</color>
+<color name="color_upcoming_no_halt_bg">#f8f8f8</color>
+<color name="color_upcoming_station_vertical_divider_color">#75a5dd</color>
+<color name="color_previous_station_vertical_divider_color">#50979797</color>
+<color name="color_previous_station_no_halt_vertical_divider_color">#cacaca</color>
+<color name="color_no_of_no_halt_station_label">#dfeeff</color>
+<color name="color_report_inaccuracy">#4a90e2</color>
+<color name="color_lts_refresh_timer">#0074d8</color>
+<color name="color_lts_message_bubble_background">#4a4a4a</color>
+<color name="color_lts_platform_no_highlighted">#89b6eb</color>
+<color name="color_lts_platform_no_dimm">#7a7a7a</color>
+<color name="color_lts_tab_indicator">#4a90e2</color>
+<!--<color name="color_previous_station_no_of_no_halt_bg">#d9d9d9</color>-->
+<color name="color_previous_station_no_of_no_halt_bg">@android:color/white</color>
+<color name="lts_stoppage_separator_color">#20979797</color>
+<color name="color_lts_arrival_departure_sticky_bar">#747274</color>
+
+<color name="color_train_navy_blue">#023562</color>
+
+<color name="loyalty_store_color">#0D5196</color>
+
+<color name="color_dark_blue">#1a70c4</color>
+<color name="color_white_one_percent">#fdfdfd</color>
+
+
+<color name="short_stay_color">#FDDD53</color>
+
+
+<color name="food_steps">#b26f00</color>
+<color name="food_card">#ebdcc4</color>
+<color name="food_tab_item">#9a2231</color>
+<color name="ocean_green">#43a27b</color>
+<color name="dark_mint">#54c483</color>
+<color name="beige_two">#fbf8f3</color>
+<color name="leather">#b07f2e</color>
+<color name="trans_black_20">#80000000</color>
+<color name="food_menu_bg_color">#ebdcc4</color>
+<color name="indigo_medium">#3F51B5</color>
+<color name="indigo_black">#1A237E</color>
+
+<color name="grey_extra_light">#EEEEEE</color>
+<color name="grey_light">#E0E0E0</color>
+<color name="grey_normal">#BDBDBD</color>
+<color name="grey_black">#212121</color>
+<color name="grey_black_80_opacity">#86212121</color>
+<color name="calendar_selector">#6AB8F6</color>
+<color name="color_timetable_deep_link_color">#2196F3</color>
+<color name="color_lts_loader_current_bg">#dfeeff</color>
+
+
+<!--TIMETABLE-->
+<color name="color_timetable_header_subtitle">#D50000</color>
+<color name="color_food_menutext">#664309</color>
+<color name="color_food_ocean">#368976</color>
+
+<!--bus-->
+<color name="color_bus_smart">#4B178A</color>
+<color name="color_bus_bg">#F8F8F8</color>
+<color name="color_seats_filling">#EB4800</color>
+<color name="bus_grad_start">#C0E5FC</color>
+<color name="bus_orange">#FBFFC7</color>
+<color name="border">#E3E3E3</color>
+<color name="bus_circle">#EBAD00</color>
+<color name="white_70"> #B3FFFFFF</color>
+<color name="food_view">#46a97d</color>
+<color name="color_food_text">#7C7C7C</color>
+<color name="beige">#f8f3eb</color>
+<color name="color_hotel_cancel"> #2790F3</color>
+<color name="hotel_blue">#D2EAF7</color>
+<color name="hotel_green_light">#DAEFCA</color>
+<color name="hotel_grey_devider">#95989A</color>
+<color name="hotel_yellow_text"> #FCDC74</color>
+<color name="color_lts_location_mode_bg">#DFEEFF</color>
+<color name="ocean_fade">#c8e9e2</color>
+<color name="color_tag">#EFEFEF</color>
+<color name="window_background">#FFF5F5F5</color>
+<color name="item_pressed_color">#CCCCCC</color>
+<color name="item_activated_color">#77CEEE</color>
+<color name="color_board">#B8E3FC</color>
+<color name="color_fill">#E6F6FF</color>
+<color name="color_view_more">#3B9EEE</color>
+<color name="color_card_discount">#28922C</color>
+<color name="yellow_loyalty">#FFE507</color>
+<color name="green_loyalty">#47AD07</color>
+<color name="orange_loyalty">#F04D05</color>
+
+<color name="payment_bank_error">#FCF2D0</color>
+<color name="payment_bank_text_color">#AF6602</color>
+<color name="color_bus_item_bg">#F5FCFF</color>
+<color name="color_smart_bus_text">#25247B</color>
+<color name="color_ry_loader_bg">#F8FFF2</color>
+<color name="color_bus_board_count">#C7EBFF</color>
+</resources>
+
+

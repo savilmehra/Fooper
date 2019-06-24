@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_collapseMode="parallax"
+
+    app:layout_collapseParallaxMultiplier="0.7"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:src="@drawable/food_thali"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_gravity="center_vertical"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:focusable="false"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:hint="Buy Sell Resell" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_grey_rectangle"
+            android:gravity="center_horizontal"
+            android:text="ASK "
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#ffff6d00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_grey_rectangle"
+            android:gravity="center_horizontal"
+            android:text="ASK "
+            android:textColor="#ffff6d00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_grey_rectangle"
+            android:gravity="center_horizontal"
+            android:text="ASK "
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#ffff6d00" />
+    </LinearLayout>
+</RelativeLayout>

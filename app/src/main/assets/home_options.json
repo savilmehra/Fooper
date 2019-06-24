@@ -1,0 +1,82 @@
+{
+  "dynamic_home_page": [
+    {
+      "name": "blog_provider",
+      "class_name": "BlogProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    },
+    {
+      "name": "blog_provider",
+      "class_name": "NormalProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    },
+    {
+      "name": "blog_provider",
+      "class_name": "NewProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    },
+    {
+      "name": "blog_provider",
+      "class_name": "BlogProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    }
+    , {
+      "name": "blog_provider",
+      "class_name": "NormalProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    },
+    {
+      "name": "blog_provider",
+      "class_name": "NewProvider",
+      "title": "hello",
+      "title_color": "",
+      "sub_title": "Savil",
+      "subtitle_color": "#404040",
+      "action1_text": "Action2 Text",
+      "action2_color": "#2196f3",
+      "background_image": "",
+      "is_footer": "no_footer",
+      "is_open": "is_open"
+    }
+  ]
+}
