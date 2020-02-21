@@ -2,22 +2,24 @@ package foop.fooper
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent.getActivity
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import android.content.Context
-import android.databinding.DataBindingUtil
+import android.content.Intent
+import androidx.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.design.widget.AppBarLayout
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.Toolbar
+import com.google.android.material.appbar.AppBarLayout
+import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
 import foop.fooper.databinding.ContentMainBinding
+import kotlinx.android.synthetic.main.toolbar_subitem.view.*
 import java.io.IOException
 import java.util.*
 
@@ -31,9 +33,9 @@ class MainActivity : AppCompatActivity() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.content_main)
         var toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-        mBinding.rvMain!!.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        mBinding.rvMain!!.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this, androidx.recyclerview.widget.LinearLayoutManager.VERTICAL, false)
         mBinding.rvMain.setHasFixedSize(true)
-        mBinding.rvMain.setItemAnimator(DefaultItemAnimator())
+        mBinding.rvMain.setItemAnimator(androidx.recyclerview.widget.DefaultItemAnimator())
 
         val homeData = Gson().fromJson(loadJSONFromAsset(), HomeData::class.java);
 
@@ -70,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            mBinding.toolbar.title = "Fooper"
+            mBinding.toolbar.title = "Sensor"
         mBinding.toolbar.setTitleTextColor(ContextCompat.getColor(this@MainActivity, android.R.color.black))
             setSupportActionBar(mBinding.toolbar)
             supportActionBar!!.setHomeButtonEnabled(true)

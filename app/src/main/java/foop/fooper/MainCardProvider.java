@@ -1,6 +1,6 @@
 package foop.fooper;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 public class MainCardProvider extends  CardProvider {
