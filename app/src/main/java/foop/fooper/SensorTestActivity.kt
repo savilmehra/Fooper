@@ -280,6 +280,10 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
                 addEntry(event)
                 plotData = false
             }
+            else if (event.sensor.type == Sensor.TYPE_ROTATION_VECTOR) {
+                addEntry(event)
+                plotData = false
+            }
             else if (event.sensor.type == Sensor.TYPE_GYROSCOPE) {
                 addEntry(event)
                 plotData = false

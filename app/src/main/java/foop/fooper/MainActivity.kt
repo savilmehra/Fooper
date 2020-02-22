@@ -19,7 +19,7 @@ import android.view.MenuItem
 import android.view.View
 import com.google.gson.Gson
 import foop.fooper.databinding.ContentMainBinding
-import kotlinx.android.synthetic.main.toolbar_subitem.view.*
+
 import java.io.IOException
 import java.util.*
 
@@ -36,11 +36,7 @@ class MainActivity : AppCompatActivity() {
         mBinding.rvMain!!.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this, androidx.recyclerview.widget.LinearLayoutManager.VERTICAL, false)
         mBinding.rvMain.setHasFixedSize(true)
         mBinding.rvMain.setItemAnimator(androidx.recyclerview.widget.DefaultItemAnimator())
-
         val homeData = Gson().fromJson(loadJSONFromAsset(), HomeData::class.java);
-
-
-
         viewMd = ViewModelProviders.of(this).get(ViewModelHomePage::class.java)
         if (homeData != null && homeData!!.dynamicHomePage != null && homeData!!.dynamicHomePage.size > 0)
             viewMd.listLiveData.value = homeData!!.dynamicHomePage
@@ -72,12 +68,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
-            mBinding.toolbar.title = "Sensor"
+        mBinding.toolbar.title = "Sensor"
         mBinding.toolbar.setTitleTextColor(ContextCompat.getColor(this@MainActivity, android.R.color.black))
-            setSupportActionBar(mBinding.toolbar)
-            supportActionBar!!.setHomeButtonEnabled(true)
-            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-            supportActionBar!!.setDisplayShowTitleEnabled(true)
+        setSupportActionBar(mBinding.toolbar)
+        supportActionBar!!.setHomeButtonEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayShowTitleEnabled(true)
         mBinding.toolbar.setNavigationOnClickListener { onBackPressed() }
 
     }
