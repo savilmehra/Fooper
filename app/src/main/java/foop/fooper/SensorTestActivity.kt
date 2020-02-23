@@ -76,7 +76,7 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
 
         val leftAxis = mChart!!.axisLeft
         val rights = mChart!!.axisRight
-        rights.spaceMin=100f
+
         leftAxis.textColor = Color.WHITE
         leftAxis.setDrawGridLines(false)
         leftAxis.setDrawGridLines(true)
@@ -123,40 +123,44 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
         }
         else if (type.equals("Rotation Sensor"))
         {
-            leftAxis.axisMinimum = -180f
-            leftAxis.axisMaximum = 180f
-            leftAxis.spaceMax=90f
-            leftAxis.labelCount=3
+            leftAxis.axisMinimum = -500f
+            leftAxis.axisMaximum = 500f
+
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_ORIENTATION)
         }
         else if (type.equals("Ambient Temperature"))
         {
-            leftAxis.axisMinimum = -10f
-            leftAxis.axisMaximum = 10f
+            leftAxis.axisMinimum = -100f
+            leftAxis.axisMaximum = 100f
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE)
         }
         else if (type.equals("Proximity Sensor"))
         {
             leftAxis.axisMinimum = -10f
             leftAxis.axisMaximum = 10f
+            leftAxis.spaceMax=5f
+            leftAxis.labelCount=3
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_PROXIMITY)
         }
         else if (type.equals("Light Sensor"))
         {
-            leftAxis.axisMinimum = -10f
-            leftAxis.axisMaximum = 10f
+
+            leftAxis.axisMinimum = -500f
+            leftAxis.axisMaximum = 500f
+            leftAxis.spaceMax=100f
+            leftAxis.labelCount=3
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_LIGHT)
         }
         else if (type.equals("Pressure Sensor"))
         {
-            leftAxis.axisMinimum = -10f
-            leftAxis.axisMaximum = 10f
+            leftAxis.axisMinimum = -100f
+            leftAxis.axisMaximum = 100f
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_PRESSURE)
         }
         else if (type.equals("Relative Sensor"))
         {
-            leftAxis.axisMinimum = -10f
-            leftAxis.axisMaximum = 10f
+            leftAxis.axisMinimum = -100f
+            leftAxis.axisMaximum = 100f
             mAccelerometer = mSensorManager!!.getDefaultSensor(Sensor.TYPE_RELATIVE_HUMIDITY)
         }
         mSensorManager!!.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL)
@@ -255,15 +259,22 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
             sinSet.setDrawCircles(false)
             sinSet.mode = LineDataSet.Mode.CUBIC_BEZIER
             sinSet.cubicIntensity = 0.2f
-            dataSets.add(sinSet)
-            dataSets.add(cosSet)
-            dataSets.add(zaxies)
+
+            if (type.equals("Light Sensor")||type.equals("Proximity Sensor"))
+                    {dataSets.add(sinSet)}
+            else
+            {
+                dataSets.add(sinSet)
+                dataSets.add(cosSet)
+                dataSets.add(zaxies)
+            }
+
             mChart!!.setData(LineData(dataSets))
             // let the chart know it's data has changed
             mChart!!.notifyDataSetChanged()
 
             // limit the number of visible entries
-            mChart!!.setVisibleXRangeMaximum(200f)
+            mChart!!.setVisibleXRangeMaximum(100f)
             // mChart.setVisibleYRange(30, AxisDependency.LEFT);
 
             // move to the latest entry
