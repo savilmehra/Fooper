@@ -204,7 +204,7 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
             cosEntries.add(Entry(set.entryCount.toFloat(), event.values[1]))
             zAxies.add(Entry(set.entryCount.toFloat(), event.values[2]))
 
-            if (type.equals("Proximity Sensor")||type.equals("Rotation Sensor")) {
+            if (type.equals("Gyroscope")||type.equals("Rotation Sensor")) {
                 val sinSet = LineDataSet(sinEntries, "roll")
                 val cosSet = LineDataSet(cosEntries, "pitch")
                 val zaxies = LineDataSet(zAxies, "yaw")
