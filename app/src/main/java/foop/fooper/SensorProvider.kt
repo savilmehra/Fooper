@@ -248,11 +248,9 @@ public class SensorProvider : MainCardProvider(), SensorEventListener {
     override fun onSensorChanged(event: SensorEvent) {
         if (event.sensor.type == Sensor.TYPE_ACCELEROMETER) {
             getAccelerometer(event)
-        }
-        else if (event.sensor.type == Sensor.TYPE_ROTATION_VECTOR) {
+        } else if (event.sensor.type == Sensor.TYPE_ROTATION_VECTOR) {
             getAccelerometer(event)
-        }
-        else if (event.sensor.type == Sensor.TYPE_GYROSCOPE) {
+        } else if (event.sensor.type == Sensor.TYPE_GYROSCOPE) {
             getAccelerometer(event)
         } else if (event.sensor.type == Sensor.TYPE_MAGNETIC_FIELD) {
             getAccelerometer(event)
@@ -277,13 +275,19 @@ public class SensorProvider : MainCardProvider(), SensorEventListener {
     private fun getAccelerometer(event: SensorEvent) {
         val values = event.values
         val x = values[0]
-        val y = values[1]
-        val z = values[2]
+        if (values.size > 1) {
+            val y = values[1]
+            yValue!!.text = y.toString()
+        }
+        if (values.size > 2) {
+            val z = values[2]
+            zValue!!.text = z.toString()
+        }
         xValue!!.text = x.toString()
-        yValue!!.text = y.toString()
-        zValue!!.text = z.toString()
+
 
     }
+
     private fun updateOrientation(rotationVector: FloatArray) {
         val rotationMatrix = FloatArray(9)
         SensorManager.getRotationMatrixFromVector(rotationMatrix, rotationVector)
@@ -296,36 +300,37 @@ public class SensorProvider : MainCardProvider(), SensorEventListener {
         yValue!!.text = worldAxisForDeviceAxisY.toString()
 
 
-      /*  // Adjust the rotation matrix for the device orientation
-        val screenRotation = mWindowManager.getDefaultDisplay().getRotation()
-        if (screenRotation == Surface.ROTATION_0) {
-            worldAxisForDeviceAxisX = SensorManager.AXIS_X
-            worldAxisForDeviceAxisY = SensorManager.AXIS_Z
-        } else if (screenRotation == Surface.ROTATION_90) {
-            worldAxisForDeviceAxisX = SensorManager.AXIS_Z
-            worldAxisForDeviceAxisY = SensorManager.AXIS_MINUS_X
-        } else if (screenRotation == Surface.ROTATION_180) {
-            worldAxisForDeviceAxisX = SensorManager.AXIS_MINUS_X
-            worldAxisForDeviceAxisY = SensorManager.AXIS_MINUS_Z
-        } else if (screenRotation == Surface.ROTATION_270) {
-            worldAxisForDeviceAxisX = SensorManager.AXIS_MINUS_Z
-            worldAxisForDeviceAxisY = SensorManager.AXIS_X
-        }
+        /*  // Adjust the rotation matrix for the device orientation
+          val screenRotation = mWindowManager.getDefaultDisplay().getRotation()
+          if (screenRotation == Surface.ROTATION_0) {
+              worldAxisForDeviceAxisX = SensorManager.AXIS_X
+              worldAxisForDeviceAxisY = SensorManager.AXIS_Z
+          } else if (screenRotation == Surface.ROTATION_90) {
+              worldAxisForDeviceAxisX = SensorManager.AXIS_Z
+              worldAxisForDeviceAxisY = SensorManager.AXIS_MINUS_X
+          } else if (screenRotation == Surface.ROTATION_180) {
+              worldAxisForDeviceAxisX = SensorManager.AXIS_MINUS_X
+              worldAxisForDeviceAxisY = SensorManager.AXIS_MINUS_Z
+          } else if (screenRotation == Surface.ROTATION_270) {
+              worldAxisForDeviceAxisX = SensorManager.AXIS_MINUS_Z
+              worldAxisForDeviceAxisY = SensorManager.AXIS_X
+          }
 
-        val adjustedRotationMatrix = FloatArray(9)
-        SensorManager.remapCoordinateSystem(rotationMatrix, worldAxisForDeviceAxisX,
-                worldAxisForDeviceAxisY, adjustedRotationMatrix)
+          val adjustedRotationMatrix = FloatArray(9)
+          SensorManager.remapCoordinateSystem(rotationMatrix, worldAxisForDeviceAxisX,
+                  worldAxisForDeviceAxisY, adjustedRotationMatrix)
 
-        // Transform rotation matrix into azimuth/pitch/roll
-        val orientation = FloatArray(3)
-        SensorManager.getOrientation(adjustedRotationMatrix, orientation)
+          // Transform rotation matrix into azimuth/pitch/roll
+          val orientation = FloatArray(3)
+          SensorManager.getOrientation(adjustedRotationMatrix, orientation)
 
-        // Convert radians to degrees
-        val pitch = orientation[1] * -57
-        val roll = orientation[2] * -57*/
+          // Convert radians to degrees
+          val pitch = orientation[1] * -57
+          val roll = orientation[2] * -57*/
 
 
     }
+
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
 
     }

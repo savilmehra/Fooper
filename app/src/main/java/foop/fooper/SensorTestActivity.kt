@@ -201,7 +201,12 @@ class SensorTestActivity : AppCompatActivity(), SensorEventListener {
             data.addEntry(Entry(set.entryCount.toFloat(), event.values[0]), 0)
             data.notifyDataChanged()
             sinEntries.add(Entry(set.entryCount.toFloat(), event.values[0]))
-            cosEntries.add(Entry(set.entryCount.toFloat(), event.values[1]))
+            if(event.values.size>1)
+            {
+                cosEntries.add(Entry(set.entryCount.toFloat(), event.values[1]))
+            }
+
+            if(event.values.size>2)
             zAxies.add(Entry(set.entryCount.toFloat(), event.values[2]))
 
             if (type.equals("Gyroscope")||type.equals("Rotation Sensor")) {
